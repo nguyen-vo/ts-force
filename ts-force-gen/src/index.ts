@@ -247,7 +247,7 @@ async function generate (config: Config) {
       objConfig.enforcePicklistValues = config.enforcePicklistValues;
     }
 
-    objConfig.autoConvertNames = objConfig.autoConvertNames || true;
+    objConfig.autoConvertNames = objConfig.autoConvertNames ?? true;
     objConfig.className = objConfig.className || sanitizeClassName(objConfig);
 
     return objConfig;
